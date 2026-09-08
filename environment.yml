@@ -1,0 +1,52 @@
+name: ddm-analysis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+
+  # Core numerical / plotting stack
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - tqdm
+
+  # Image/video processing
+  - opencv
+  - scikit-image
+  - imageio
+  - imageio-ffmpeg
+  - ffmpeg
+  - tifffile
+  - av
+
+  # Particle/video analysis utilities
+  - trackpy
+  - pims
+  - pywavelets
+
+  # Interactive notebooks
+  - jupyterlab
+  - notebook
+  - ipykernel
+
+  # Napari visualization
+  - napari
+  - pyqt
+
+  # Useful file/data utilities
+  - h5py
+  - pyyaml
+
+  # Optional acceleration / convenience
+  - numba
+
+  - pip
+  - pip:
+      # Install the DDM toolkit manually/editably if it is local.
+      # From the repo root, run:
+      #   pip install -e .
+      #
+      # Or add the GitHub URL here if you want the environment
+      # to install it automatically.
+      # - git+https://github.com/<USERNAME>/<REPO>.git
